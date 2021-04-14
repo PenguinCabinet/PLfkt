@@ -169,7 +169,7 @@ topstmt         :
                 }
                 |identifier identifier '(' f_args ')'  '{' stmts '}'
                 {
-                    $$ = new node_t::def_func_t($1,$2,$4,$7);
+                    $$ = new node_t::def_func_t($1,(node_t::symbol_t*)$2,$4,$7);
                 }                
                 ;
 

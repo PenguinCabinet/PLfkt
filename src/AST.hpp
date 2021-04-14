@@ -102,13 +102,13 @@ class import_t:public one_t{
 class def_func_t:public one_t{
   public:
   one_t* ret_type;
-  one_t* name;
+  symbol_t* name;
   one_t* args;
   one_t* body;
 
     def_func_t(
         one_t* ret_type,
-        one_t* name,
+        symbol_t* name,
         one_t* args,
         one_t* body
     );

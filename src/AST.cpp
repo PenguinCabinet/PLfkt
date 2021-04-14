@@ -80,7 +80,7 @@ using namespace node_t;
 
     def_func_t::def_func_t(
         one_t* ret_type,
-        one_t* name,
+        symbol_t* name,
         one_t* args,
         one_t* body
     ):one_t(node_type_t::def_func_t){
